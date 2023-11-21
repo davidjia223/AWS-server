@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,10 @@
     <!-- Preconnect to Required Origins -->
     <link href='https://fonts.gstatic.com' crossorigin='anonymous' rel='preconnect'>
 
-    <!-- Styles and Fonts -->
+    <!-- External CSS file for styles -->
     <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap' rel='stylesheet'>
 
     <!-- SEO and Social Media Metadata -->
@@ -25,9 +27,10 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://davidjia.ca/assets/YOUR_IMAGE_NAME.jpg" />
 
-    <!-- External CSS file for styles -->
-    <link rel="stylesheet" href="/css/style.css">
+    <!-- External JavaScript with defer attribute for optimized loading -->
+    <script src="/js/main.js" defer></script>
 
+    <!-- Inline CSS for small, specific styles -->
     <style type='text/css'>
         body {
             font-family: 'Roboto', sans-serif;
@@ -42,6 +45,7 @@
             color: #444;
             text-align: center;
             padding-top: 50px;
+            font-size: 36px; /* Increase font size for headings */
         }
 
         p {
@@ -54,10 +58,7 @@
 </head>
 <body>
     <!-- Header -->
-    <h1>Welcome to David Jia's website</h1>
+    <h1>Welcome to David Jia's Website</h1>
     <p>Now hosted on Amazon S3 and ready to showcase amazing projects and skills!</p>
-
-    <!-- JavaScript at the end of the body for optimized loading -->
-    <script src="/js/main.js" defer></script>
 </body>
 </html>
