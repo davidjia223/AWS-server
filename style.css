@@ -45,12 +45,48 @@ footer {
     color: white;
 }
 
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #333;
+}
+
+/* Responsive Navigation */
 @media (max-width: 600px) {
-    nav ul {
-      display: none;
-    }
     .hamburger-menu {
-      display: block;
+        display: block;
     }
-  }
-  
+
+    nav ul {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('path/to/roboto.woff2') format('woff2');
+    font-display: swap;
+}
