@@ -1,10 +1,16 @@
+:root {
+    --primary-color: rgb(146, 108, 34); 
+    --text-color: #333;
+    --background-color: #f4f4f4;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 header {
@@ -30,7 +36,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: var(--primary-color);
 }
 
 section {
@@ -56,7 +62,7 @@ footer {
     width: 25px;
     height: 3px;
     margin: 5px;
-    background-color: #333;
+    background-color: var(--primary-color);
 }
 
 /* Responsive Navigation */
@@ -85,8 +91,16 @@ footer {
     }
 }
 
-@font-face {
-    font-family: 'Roboto';
-    src: url('path/to/roboto.woff2') format('woff2');
-    font-display: swap;
+/* Call to Action Button */
+.cta-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: darken(var(--primary-color), 10%);
 }
