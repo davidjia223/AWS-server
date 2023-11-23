@@ -45,3 +45,12 @@ footer {
     color: white;
 }
 
+@media (max-width: 600px) {
+    nav ul {
+      display: none;
+    }
+    .hamburger-menu {
+      display: block;
+    }
+  }
+  
