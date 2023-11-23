@@ -1,18 +1,21 @@
-/* Style.css */
-
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
-    color: #333;
+    padding: 0;
     line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
 header {
-    background: #444;
-    color: #fff;
-    padding: 1rem 0;
     text-align: center;
+    padding: 2rem 0;
+}
+
+.profile-img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
 }
 
 nav ul {
@@ -22,10 +25,10 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
+    color: #333;
 }
