@@ -6,7 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
         navUL.classList.toggle('active');
     }
 
-    
+    function closeMenu(event) {
+        if (event.target.tagName === 'A' || !hamburger.contains(event.target) && !navUL.contains(event.target)) {
+            navUL.classList.remove('active');
+        }
+    }
 
     hamburger.addEventListener('click', toggleMenu);
     document.addEventListener('click', closeMenu);
