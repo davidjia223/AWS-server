@@ -20,7 +20,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const modal = document.getElementById("thankYouModal");
     const span = document.getElementsByClassName("close")[0];
 
-    
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 
     document.getElementById('contactForm').addEventListener('submit', function(e){
         e.preventDefault();

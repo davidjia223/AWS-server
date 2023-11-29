@@ -11,9 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         echo "Invalid email format";
         exit();
     }
-
-    // Process your data here: send email, store in database, etc.
-
+    //Process data here, sending email/store etc
     // Redirect to a thank you page or display a success message
     header('Location: thank_you.html');
     exit();
