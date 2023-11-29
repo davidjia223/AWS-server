@@ -2,35 +2,31 @@ document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger-menu');
     const navUL = document.querySelector('nav ul');
 
-    function toggleMenu() {
+    hamburger.addEventListener('click', () => {
         navUL.classList.toggle('active');
-    }
+    });
 
-    function closeMenu(event) {
+    document.addEventListener('click', event => {
         if (event.target.tagName === 'A' || !hamburger.contains(event.target) && !navUL.contains(event.target)) {
             navUL.classList.remove('active');
         }
-    }
+    });
 
-    hamburger.addEventListener('click', toggleMenu);
-    document.addEventListener('click', closeMenu);
-});
-
-document.addEventListener('DOMContentLoaded', (event) => {
     const modal = document.getElementById("thankYouModal");
     const span = document.getElementsByClassName("close")[0];
+    const contactForm = document.getElementById('contactForm');
 
-    span.onclick = function() {
+    span.onclick = () => {
         modal.style.display = "none";
     }
 
-    window.onclick = function(event) {
+    window.onclick = event => {
         if (event.target == modal) {
             modal.style.display = "none";
         }
     }
 
-    document.getElementById('contactForm').addEventListener('submit', function(e){
+    contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         modal.style.display = "block";
     });
