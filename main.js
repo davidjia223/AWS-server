@@ -15,3 +15,15 @@ document.addEventListener('DOMContentLoaded', function() {
     hamburger.addEventListener('click', toggleMenu);
     document.addEventListener('click', closeMenu);
 });
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const modal = document.getElementById("thankYouModal");
+    const span = document.getElementsByClassName("close")[0];
+
+    
+
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+        e.preventDefault();
+        modal.style.display = "block";
+    });
+});
