@@ -104,3 +104,14 @@ footer {
 .cta-button:hover {
     background-color: darken(var(--primary-color), 10%);
 }
+
+nav ul li a:hover, .cta-button:hover {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 600px) {
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+}
