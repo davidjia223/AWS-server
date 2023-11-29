@@ -17,7 +17,7 @@
 
         <img src="YOUR_IMAGE_NAME.jpg" alt="David Jia" class="profile-img">
         <h1>David J.</h1>
-        <p>Aspiring Software Engineer Developer</p>
+        <p>Welcome to my journey as an aspiring Software Engineer</p>
         <a href="#contact" class="cta-button">Contact Me</a>
 
         <nav>
@@ -33,22 +33,30 @@
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>Joe Mama...</p>
+            <p>Passionate developer with a focus on front-end technologies and mobile app development. Currently studying at Simon Fraser University and loving every bit of it!</p>
         </section>
 
         <section id="portfolio">
             <h2>Portfolio</h2>
-            <!-- Add projects here -->
+            <div class="project-grid">
+                <!-- Projects will be inserted here -->
+            </div>
+            <a href="path_to_resume.pdf" class="cta-button" download>Download My Resume</a>
         </section>
 
         <section id="skills">
             <h2>Skills</h2>
-            <!-- Skills and expierence -->
+            <!-- Skills and experience -->
         </section>
 
+        <section id="education-hobbies">
+            <h2>Education & Hobbies</h2>
+            <p>Studying at Simon Fraser University. Enthusiast in badminton, gym workouts, and an avid podcast listener.</p>
+            <!-- Favorite Podcast Quotes sections -->
+        </section>
         <section id="contact">
             <h2>Contact</h2>
-            <form action="submit_form.php" method="post">
+            <form action="submit_form.php" method="post" id="contactForm">
                 <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
@@ -61,18 +69,16 @@
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" required></textarea>
                 </div>
-                <!-- Popup -->
-                <div id="thankYouModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <h2>Thank You!</h2>
-                        <p>Your message has been successfully sent. Thank you! </p>
-                    </div>
-                </div>
                 <button type="submit">Send Message</button>
             </form>
+            <div id="thankYouModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Thank You!</h2>
+                    <p>Your message has been successfully sent. Thank you!</p>
+                </div>
+            </div>
         </section>
-        
     </main>
 
     <footer>
@@ -80,3 +86,4 @@
     </footer>
 </body>
 </html>
+
