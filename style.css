@@ -175,6 +175,15 @@ nav ul.active {
         top: 20px;
         left: 20px;
     }
+
+    section {
+        min-height: auto; /* Adjust for mobile screens */
+        padding: 1rem;
+    }
+
+    nav ul {
+        top: 50px;
+    }
 }
 
 .overlay {
