@@ -53,9 +53,12 @@ footer {
     background-color: #444;
     color: white;
 }
+
 .hamburger-menu {
-    cursor: pointer;
-    display: block;
+    position: fixed; 
+    top: 10px;
+    left: 10px; 
+    z-index: 1000; 
 }
 
 .hamburger-menu span {
@@ -83,15 +86,22 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: none; 
-    flex-direction: column;
-    background-color: #fff;
-    width: 100%;
-    text-align: center;
-    position: fixed;
-    top: 60px;
-    left: 0;
-    z-index: 1000;
+    display: flex; 
+    justify-content: center;
+    position: static; 
+    background-color: transparent; 
+    width: auto; 
+    top: auto; 
+    left: auto; 
+    z-index: auto; 
+}
+
+nav ul li {
+    padding: 15px 0;
+}
+
+nav ul.active {
+    display: flex;
 }
 
 nav ul li {
@@ -101,24 +111,6 @@ nav ul li {
 nav ul.active {
     display: flex;
 }
-
-@media (min-width: 601px) {
-    nav ul {
-        position: static;
-        display: flex;
-        justify-content: center;
-        background-color: transparent;
-    }
-
-    nav ul li {
-        margin: 0 15px;
-    }
-
-    .hamburger-menu {
-        display: none;
-    }
-}
-
 
 .cta-button {
     background-color: var(--primary-color);
