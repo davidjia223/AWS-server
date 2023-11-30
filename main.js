@@ -2,10 +2,29 @@
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger-menu');
     const navUL = document.querySelector('nav ul');
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlay');
+    document.body.appendChild(overlay);
 
     hamburger.addEventListener('click', () => {
+        navUL.style.animation = 'none'; // Reset animation
+        setTimeout(() => { navUL.style.animation = ''; }, 10); // Restart animation
         hamburger.classList.toggle('active');
         navUL.classList.toggle('active');
+        overlay.classList.toggle('active');
+    });
+
+    overlay.addEventListener('click', closeMenu);
+
+    function closeMenu() {
+        hamburger.classList.remove('active');
+        navUL.classList.remove('active');
+        overlay.classList.remove('active');
+    }
+
+    // Close menu when a link is clicked
+    navUL.querySelectorAll('li a').forEach(link => {
+        link.addEventListener('click', closeMenu);
     });
 
     document.addEventListener('click', event => {
