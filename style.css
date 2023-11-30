@@ -59,6 +59,7 @@ footer {
     top: 10px;
     left: 10px; 
     z-index: 1000; 
+    display: block;
 }
 
 .hamburger-menu span {
@@ -111,6 +112,24 @@ nav ul li {
 nav ul.active {
     display: flex;
 }
+
+@media (min-width: 601px) {
+    nav ul {
+        position: static;
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+}
+
 
 .cta-button {
     background-color: var(--primary-color);
