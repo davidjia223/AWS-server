@@ -53,43 +53,72 @@ footer {
     background-color: #444;
     color: white;
 }
-
 .hamburger-menu {
-    display: none;
     cursor: pointer;
+    display: block;
 }
 
 .hamburger-menu span {
     display: block;
     width: 25px;
     height: 3px;
-    margin: 5px;
+    margin: 5px auto; 
     background-color: var(--primary-color);
+    transition: all 0.3s ease;
 }
 
-@media (max-width: 600px) {
-    .hamburger-menu {
-        display: block;
-    }
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
 
+.hamburger-menu.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; 
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul li {
+    padding: 15px 0; 
+}
+
+nav ul.active {
+    display: flex;
+}
+
+@media (min-width: 601px) {
     nav ul {
-        display: none;
-        position: absolute;
-        right: 0;
-        top: 0;
-        flex-direction: column;
-        background-color: #fff;
-        width: 100%;
-    }
-
-    nav ul.active {
+        position: static;
         display: flex;
+        justify-content: center;
+        background-color: transparent;
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 0 15px;
+    }
+
+    .hamburger-menu {
+        display: none;
     }
 }
+
 
 .cta-button {
     background-color: var(--primary-color);
@@ -181,7 +210,29 @@ footer {
     text-align: center;
 }
 
-/* Form Styling */
+/* Form style */
 .form-group {
     margin-bottom: 20px;
+}
+
+
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Hamburger Menu Animation */
+.hamburger-menu span {
+    transition: all 0.3s ease;
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }
