@@ -15,10 +15,20 @@ body {
     background-color: var(--background-color);
 }
 
-header {
+header, footer {
     text-align: center;
-    padding: 2rem 0;
+    padding: 1rem 0;
     background-color: rgba(255, 255, 255, 0.9);
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
 }
 
 .profile-img {
@@ -31,15 +41,15 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: none; 
+    display: none;
     flex-direction: column;
     background-color: #fff;
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-    border: 3px solid var(--primary-color); 
+    border: 3px solid var(--primary-color);
     width: 100%;
     text-align: center;
     position: fixed;
-    top: 50px;
+    top: 60px;
     left: 0;
     z-index: 1000;
     transition: all 0.3s ease;
@@ -51,7 +61,7 @@ nav ul li {
 }
 
 nav ul li:last-child {
-    border-bottom: none; 
+    border-bottom: none;
 }
 
 nav ul li a {
@@ -71,18 +81,6 @@ nav ul.active {
     display: flex;
 }
 
-section {
-    padding: 2rem 0;
-    text-align: center;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #444;
-    color: white;
-}
-
 .hamburger-menu {
     position: fixed;
     cursor: pointer;
@@ -96,7 +94,7 @@ footer {
     display: block;
     width: 25px;
     height: 3px;
-    margin: 5px auto; 
+    margin: 5px auto;
     background-color: var(--primary-color);
     transition: all 0.3s ease;
 }
@@ -179,15 +177,6 @@ footer {
     }
 }
 
-/* Overlay for Hamburger Menu */
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-
-/* Overlay for Hamburger Menu */
 .overlay {
     display: none;
     position: fixed;
@@ -199,7 +188,6 @@ footer {
     z-index: 999;
 }
 
-/* Project Grid Styling */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -207,7 +195,6 @@ footer {
     margin: 20px;
 }
 
-/* Resume Download Button */
 .cta-button {
     background-color: var(--primary-color);
     color: white;
@@ -215,26 +202,22 @@ footer {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-    margin-top: 20px;
 }
 
 .cta-button:hover {
     background-color: darken(var(--primary-color), 10%);
 }
 
-/* Education and Hobbies Section */
 #education-hobbies {
     background-color: var(--light-background-color);
     padding: 20px;
     text-align: center;
 }
 
-/* Form style */
 .form-group {
     margin-bottom: 20px;
 }
 
-/* Hamburger Menu Animation */
 .hamburger-menu span {
     transition: all 0.3s ease;
 }
@@ -249,5 +232,4 @@ footer {
 
 .hamburger-menu.active span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-}
 }
