@@ -78,7 +78,6 @@ h1 {
     height: auto;
     border-radius: 50%;
 }
-
 nav ul {
     list-style: none;
     padding: 0;
@@ -87,7 +86,7 @@ nav ul {
     flex-direction: column;
     background-color: var(--secondary-color);
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-    border: 3px solid var(--primary-color);
+    border: 3px solid var(--accent-color); 
     width: 100%;
     text-align: center;
     position: fixed;
@@ -99,7 +98,7 @@ nav ul {
 
 nav ul li {
     padding: 15px 0;
-    border-bottom: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color); 
 }
 
 nav ul li:last-child {
@@ -171,11 +170,11 @@ nav ul.active {
 
 @media (max-width: 600px) {
     header {
-        min-height: 60vh; /* Adjust header height for mobile */
+        min-height: 60vh;
     }
 
     h1, h2 {
-        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        font-size: 1.5rem; 
     }
 
     .hamburger-menu {
@@ -184,11 +183,11 @@ nav ul.active {
     }
 
     nav ul {
-        top: 50px; /* Adjust navigation menu position */
+        top: 50px;
     }
 
     section {
-        min-height: auto; /* Adjust section height for smaller screens */
+        min-height: auto; 
         padding: 1rem;
     }
 }
