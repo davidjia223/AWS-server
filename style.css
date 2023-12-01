@@ -20,7 +20,7 @@ body {
 
 header {
     min-height: 80vh;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color); 
     color: var(--text-color);
     text-align: center;
     padding: 1rem 0;
@@ -172,23 +172,18 @@ nav ul.active {
     header {
         min-height: 60vh;
     }
-
     h1, h2 {
         font-size: 1.5rem; 
     }
-
     .hamburger-menu {
         top: 20px;
         left: 20px;
     }
-
     nav ul {
         top: 50px;
     }
-
-    section {
-        min-height: auto; 
-        padding: 1rem;
+    .common-section {
+        min-height: auto;
     }
 }
 
