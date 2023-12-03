@@ -30,7 +30,7 @@ header {
     align-items: center;
 }
 
-#about, #portfolio, #skills, #education-hobbies {
+#about, #portfolio, #skills, #education-hobbies{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -246,12 +246,12 @@ nav ul.active {
     padding: 1rem;
 }
 
-/* Form Styling */
+/* Form */
 .form-group {
     margin-bottom: 20px;
 }
 
-/* Contact Form Styling */
+/* Contact Form */
 #contact {
     min-height: 50vh;
     background-color: var(--secondary-color); 
